@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>수도 퀴즈</title>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>수도 퀴즈</h1>
+
+    <div class="quiz-content">
+	  <label for="myCheckbox">목소리 효과음:</label>
+      <input type="checkbox" id="leafysound" name="leafysound" checked>
+      <label for="continent">대륙 선택:</label>
+      <select id="continent">
+        <option value="아시아">아시아</option>
+        <option value="유럽">유럽</option>
+        <option value="북아메리카">북아메리카</option>
+        <option value="남아메리카">남아메리카</option>
+        <option value="아프리카">아프리카</option>
+        <option value="오세아니아">오세아니아</option>
+      </select>
+
+      <button onclick="startQuiz()">퀴즈 시작</button>
+	  
+	  <a href="https://focusprojectteam.netlify.app">
+        <button>크레딧</button>
+	  </a>	  
+	  	  
+      <h2 id="question"></h2>
+
+      <div class="answer-section">
+        <label for="userAnswer">정답 입력:</label>
+        <input type="text" id="userAnswer">
+        <button onclick="checkAnswer()">정답 확인</button>
+        <button onclick="subMit()">오류 신고</button>
+		<select>
+			<option>정답확인</option>
+			<option id="answer">정답확인</option>
+		</select>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
